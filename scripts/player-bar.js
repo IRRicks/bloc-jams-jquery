@@ -10,7 +10,9 @@
     const currentSongIndex = album.songs.indexOf(player.currentlyPlaying);
     const nextSongIndex = currentSongIndex + 1;
     if (nextSongIndex >= album.songs.length) { return; }
-
+    
+  });
+  
     $('button#previous').on('click', function() {
       if (player.playState !== 'playing') { return; }
 
