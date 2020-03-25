@@ -10,9 +10,17 @@
     const currentSongIndex = album.songs.indexOf(player.currentlyPlaying);
     const nextSongIndex = currentSongIndex + 1;
     if (nextSongIndex >= album.songs.length) { return; }
+<<<<<<< HEAD
     
   });
   
+=======
+
+    const nextSong = album.songs[nextSongIndex];
+    player.playPause(nextSong);
+      });
+
+>>>>>>> checkpoint-17-jquery
     $('button#previous').on('click', function() {
       if (player.playState !== 'playing') { return; }
 
@@ -20,10 +28,15 @@
       const previousSongIndex = currentSongIndex - 1;
       if (previousSongIndex >= album.songs.length) { return; }
 
+<<<<<<< HEAD
   });
 
 
     const nextSong = album.songs[nextSongIndex];
     player.playPause(nextSong);
+=======
+     const previousSong = album.songs[previousSongIndex];
+     player.playPause(previousSong);
+>>>>>>> checkpoint-17-jquery
   });
 }
