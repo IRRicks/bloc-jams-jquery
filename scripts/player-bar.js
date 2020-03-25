@@ -20,7 +20,7 @@
       const previousSongIndex = currentSongIndex - 1;
       if (previousSongIndex >= album.songs.length) { return; }
 
-
+  });
 
 
     const nextSong = album.songs[nextSongIndex];
