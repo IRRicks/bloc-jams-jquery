@@ -27,7 +27,7 @@
         $('#time-control .current-time').text( currentTime );
         $('#time-control input').val(percent);
         }, 1000);
-}
+
 
     $('button#previous').on('click', function() {
       if (player.playState !== 'playing') { return; }
