@@ -1,6 +1,5 @@
 {
 
-
   $('#album-title').text(album.title);
   $('img#album-cover-art').attr('src', album.albumArtUrl);
   $('.artist').text(album.artist);
@@ -27,4 +26,5 @@
 
      $('#song-list').append(song.element);
    });
-
+  
+}
