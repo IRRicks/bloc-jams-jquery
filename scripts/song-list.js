@@ -10,6 +10,7 @@
                    </button>
                 </td>
                 <td>${song.title}</td>
+                <td>${song.duration}</td>
                if (player.playState !== 'playing') { return; }
             </tr>
         `);
