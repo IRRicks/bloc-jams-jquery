@@ -1,5 +1,4 @@
-{
-  $('button#play-pause').on('click', function() {
+ $('button#play-pause').on('click', function() {
     helper.playPauseAndUpdate();
     $(this).attr('playState', player.playState);
      });
@@ -22,14 +21,15 @@
         const percent = (currentTime / duration) * 100;
         $('#time-control .current-time').text( currentTime );
         $('#time-control input').val(percent);
+        $('#time-control .total-time').text( duration );
         }, 1000);
     
  $('#time-control input').on('input', function (event) {
       player.skipTo(event.target.value);
        });
+
  $('#volume-control input').on('input', function (event) {
     player.setVolume(event.target.value);
-
        });
 
 $('button#previous').on('click', function() {
@@ -43,9 +43,6 @@ $('button#previous').on('click', function() {
      helper.playPauseAndUpdate(previousSong);
 
   }); 
-  
-}
- 
 
  
 
